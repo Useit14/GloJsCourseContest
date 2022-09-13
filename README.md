@@ -1,1 +1,1 @@
-# GloJsCourseContest
+# GloJsCourse3D

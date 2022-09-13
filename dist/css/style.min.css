@@ -1,0 +1,246 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Light.eot);
+    src: url(../fonts/Roboto-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Light.woff2) format("woff2"), url(../fonts/Roboto-Light.woff) format("woff"), url(../fonts/Roboto-Light.ttf) format("truetype"), url(../fonts/Roboto-Light.svg#Roboto-Light) format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.eot);
+    src: url(../fonts/Roboto-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.ttf) format("truetype"), url(../fonts/Roboto-Regular.svg#Roboto-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.eot);
+    src: url(../fonts/Roboto-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Medium.woff2) format("woff2"), url(../fonts/Roboto-Medium.woff) format("woff"), url(../fonts/Roboto-Medium.ttf) format("truetype"), url(../fonts/Roboto-Medium.svg#Roboto-Medium) format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.eot);
+    src: url(../fonts/Roboto-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.ttf) format("truetype"), url(../fonts/Roboto-Bold.svg#Roboto-Bold) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+html {
+    font-size: 10px;
+    min-height: 100%;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+img {
+    max-width: 100%
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.8rem;
+    min-height: 100%;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+
+}
+
+body .wrapper {
+    max-width: 1140px
+}
+
+body .btn.active.focus,
+body .btn.active:focus,
+body .btn.focus,
+body .btn:active.focus,
+body .btn:active:focus,
+body .btn:focus {
+    outline: 0
+}
+
+body a:focus,
+body button:active,
+body button:focus {
+    outline: 0
+}
+
+body .menu:hover {
+    cursor: pointer
+}
+
+body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 3
+}
+
+body li a {
+    font-size: 2rem;
+    color: #fff
+}
+
+body a:hover {
+    text-decoration: none;
+    color: #19b5fe
+}
+
+body p {
+    font-weight: 300;
+    margin: 0
+}
+
+body .close-btn {
+    position: fixed;
+    top: 30px;
+    left: 350px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform-origin: 50% 53%;
+    transform-origin: 50% 53%;
+    display: block;
+    line-height: 3rem;
+    text-align: center;
+    color: #19b5fe
+}
+
+body .close-btn:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+
+body h1 {
+    font-size: 4.8rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    letter-spacing: .1px;
+    line-height: .9
+}
+
+body h2 {
+    font-size: 3.6rem;
+    font-weight: 300;
+    margin-bottom: 2rem
+}
+
+body small {
+    font-size: 1.2rem
+}
+
+body .btn.focus,
+body .btn:focus,
+body .btn:hover {
+    color: #fff
+}
+
+body button:hover {
+    background-color: #ade4f4
+}
+
+.wrapper {
+    padding-bottom: 2.6rem;
+    margin: auto;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+
+}
+
+.wrapper h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700
+}
+
+.wrapper a {
+    margin: 1rem auto;
+    -webkit-transition: 1s;
+    text-decoration: none;
+    transition: 1s
+}
+
+.card {
+    padding-bottom: 1rem;
+}
+
+.card-text .row:first-child {
+    margin-top: 1rem;
+}
+
+.card-text .btn {
+    margin-top: 1rem;
+}
+
+.bound {
+    margin-top: 100vh;
+}
+
+.offcanvas-body-container {
+    height: 100%;
+}
+
+.card-image {
+    height: 72vh;
+}
+
+.arrow {
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
