@@ -23,27 +23,32 @@ const scroll = (event, data, keys) => {
   };
 
   const setCodeToNodes = (nodes) => {
-    for (const key in nodes) {
-      if (Object.hasOwnProperty.call(nodes, key)) {
-        if (key === "realName") {
-          nodes["name"].textContent += `(${data[key]})`;
-          continue;
-        }
-        if (key === "movies") {
-          nodes[key].textContent = "";
-          if (data[key]) {
-            data[key].forEach((element) => {
-              nodes[key].textContent += `${element}; `;
-            });
+    debugger;
+    if (data) {
+      for (const key in nodes) {
+        if (Object.hasOwnProperty.call(nodes, key)) {
+          if (key === "realName") {
+            nodes["name"].textContent += `(${data[key]})`;
+            continue;
           }
-          continue;
+          if (key === "movies") {
+            nodes[key].textContent = "";
+            if (data[key]) {
+              data[key].forEach((element) => {
+                nodes[key].textContent += `${element}; `;
+              });
+            }
+            continue;
+          }
+          if (key === "photo") {
+            nodes[key].src = data[key];
+            continue;
+          }
+          nodes[key].textContent = data[key];
         }
-        if (key === "photo") {
-          nodes[key].src = data[key];
-          continue;
-        }
-        nodes[key].textContent = data[key];
       }
+    } else {
+      window.location.assign("/");
     }
   };
 
