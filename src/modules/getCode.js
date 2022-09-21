@@ -6,7 +6,6 @@ const getCode = async (nameClass = "current") => {
   const cardHero = container
     .split('<div class="container current">')[1]
     .split('<div class="container bound d-none"></div>')[0];
-  console.log(cardHero);
   return cardHero;
 };
 
